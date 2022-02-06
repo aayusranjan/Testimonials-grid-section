@@ -1,0 +1,146 @@
+/*##############################################################################
+                                Global Values
+##############################################################################*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Dongle&family=Libre+Baskerville&family=Outfit:wght@700&display=swap');
+
+:root {
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+
+    --default-famliy: 'Barlow Semi Condensed', sans-serif;
+    --default-border: .6rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--light-grayish-blue);
+    font-size: 15px;
+    font-family: var(--default-famliy);
+    justify-content:center;
+    align-items: center;
+}
+
+
+
+@media only screen and (max-width: 380px) {
+    .grid__container {
+        
+    }
+    .big--card, .small--card, .large--card {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+    }
+    
+}
+@media only screen and (min-width: 1440px) {
+    .grid__container {
+        margin: 3rem 0 0 3rem;
+    }
+
+    .item--3 {
+    padding-bottom: 3.5rem;
+    }
+    .item--4 {
+        margin-left: -18.7rem;
+    }
+    .big--card {
+        max-width: 600px;
+        padding: 2rem;
+    }
+    .small--card {
+        max-width: 300px;
+        padding: 2rem;
+    }
+    .large--card {
+        max-width: 300px;
+        padding: 2rem;
+
+    }
+}
+/*##############################################################################
+                            Containers
+##############################################################################*/
+.grid__container {
+    display: inline-grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    color: var(--white);
+}
+
+
+.big--card {
+    border-radius: var(--default-border);
+}
+
+.small--card {
+    border-radius: var(--default-border);
+}
+
+.large--card {  
+    border-radius: var(--default-border);
+}
+
+.item--1 {
+    background: var(--moderate-violet);
+}
+
+.item--2 {
+    background: var(--very-dark-grayish-blue);
+}
+
+
+.item--3, .item--5 {
+    background: var(--white);
+    color: var(--very-dark-grayish-blue);
+}
+
+.item--4 {
+    background: var(--very-dark-blackish-blue);
+    
+}
+
+/*##############################################################################
+                            Typography
+##############################################################################*/
+.testimonial__details {
+    padding: .5rem;
+    
+}
+
+.testimonial__appreciation, .testimonial__name {
+    font-weight: 600;
+}
+
+.testimonial__achievement, .testimonial__verification {
+    font-weight: 500;
+}
+
+.testimonial__appreciation {
+    padding: 1.5rem 0;
+}
+/*##############################################################################
+                            Components
+##############################################################################*/
+
+.testimonial__info {
+  display: flex;
+}
+/*##############################################################################
+                            Images
+##############################################################################*/
+
+.testimonial__img {
+    border-radius: 50%;
+    border: 2px #fff;
+}
