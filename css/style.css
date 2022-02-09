@@ -23,7 +23,6 @@
 
 body {
     background: var(--light-grayish-blue);
-    font-size: 15px;
     font-family: var(--default-famliy);
     height: 100vh;
     font-size: 13px;
@@ -39,7 +38,7 @@ body {
     grid-template-columns: repeat(4, 250px);
     grid-gap: 20px;
     justify-content: center;
-    margin-top: 5rem;
+    padding-top: 5rem;
 }
 .item {
     padding: 2rem;
